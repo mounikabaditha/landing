@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgreen;
+    padding: 10px 20px;
+  }
+  .company-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  .background-image {
+    background-image: url('https://www.greenamerica.org/sites/default/files/pieces/istockag2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.114);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tagline {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: aliceblue;
+  }
+  .slogan {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: aliceblue;
+  }
+  .get-started-button {
+    padding: 10px 20px;
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .get-started-button:hover {
+    background-color: darkgreen;
+    color: white;
+  }
+  .intro-section {
+    display: flex;
+    padding: 50px;
+    background-color: #f5f5f5;
+    align-items: center;
+    gap: 30px;
+  }
+  .intro-image {
+    flex: 1;
+    position: relative;
+  }
+  .intro-image img {
+    max-width: 100%;
+    border: 5px solid lightgreen;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .intro-content {
+    flex: 2;
+  }
+  .intro-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .intro-text {
+    font-size: 18px;
+  }
+  .farm-to-fork {
+    background-color: #f5f5f5;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .farm-to-fork-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+  }
+
+  .farm-to-fork-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .farm-to-fork-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+  }
+
+  .farm-to-fork-content p {
+    font-size: 16px;
+    color: gray;
+  }
+
+  .farm-to-fork-image {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .farm-to-fork-image img {
+    max-width: 100%;
+    border: 5px solid lightgreen;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .contact-us {
+    background-color:white;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form {
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .contact-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+  }
+
+  .contact-input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  .contact-message {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 100px;
+  }
+
+  .contact-send-button {
+    padding: 10px;
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-send-button:hover {
+    background-color: darkgreen;
+    color: white;
+  }
+
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="company-name">Company Name</div>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="#">Home</a></li>
+      <li><a class="nav-link" href="#">Services</a></li>
+      <li><a class="nav-link" href="#">Gallery</a></li>
+      <li><a class="nav-link" href="#">Co-Traveller</a></li>
+      <li><a class="nav-link" href="#">Contact Us</a></li>
+      <li><a class="nav-link" href="#">Register</a></li>
+    </ul>
+  </div>
+  <div class="background-image">
+    <div class="tagline"><strong>Empowering Society Through Science</strong></div>
+    <div class="slogan"><strong>Food Lab is your one-point solution for all food safety needs</strong></div>
+    <button class="get-started-button">Get Started</button>
+  </div>
+  <div class="intro-section">
+    <div class="intro-image">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.Ks9MO8f3gMf4bWZs1dj7HwHaEI&pid=Api&P=0&h=180.jpg" alt="Food Lab Safety Services">
+    </div>
+    <div class="intro-content">
+      <div class="intro-heading">Food Lab Safety Services</div>
+      <div class="intro-text">
+        Food control has evolved from a focus on end-product testing to emphasis on prevention through adequate process controls. Nonetheless laboratory services continue to play the essential role within the overall food control system of finally proving that practices by food producers, suppliers and processors result in safe products for the consumers.
+      </div>
+    </div>
+  </div>
+  <div class="farm-to-fork">
+    <div class="farm-to-fork-wrapper">
+      <div class="farm-to-fork-image">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.LJzo7Ry2k3ZkxwSCozbaOAHaE7&pid=Api&P=0&h=180.jpg" alt="Farm to Fork Image 1">
+      </div>
+      <div class="farm-to-fork-content">
+        <h2>Enduring the Safety of Food from Farm to Fork</h2>
+        <p>
+          Ensuring the safety and quality of food along its journey from farm to your plate is our top priority. Our dedicated team works tirelessly to maintain the highest standards throughout the production, processing, and distribution processes.
+        </p>
+      </div>
+    </div>
+    <div class="farm-to-fork-wrapper">
+      <div class="farm-to-fork-content">
+        <h2>Our Commitment to Quality</h2>
+        <p>
+          At Food Lab, we're dedicated to providing you with the safest and most reliable food products. Our state-of-the-art testing and analysis techniques guarantee that every step of the food supply chain is monitored for compliance with industry standards.
+        </p>
+      </div>
+      <div class="farm-to-fork-image">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.HKRNY2T1TP-KDTmOQh1nuwHaEK&pid=Api&P=0&h=180.jpg" alt="Farm to Fork Image 2">
+      </div>
+    </div>
+    <!-- You can continue alternating the content and images as needed -->
+  </div>
+  <div class="contact-us">
+    <div class="contact-form">
+      <div class="contact-heading">Contact Us</div>
+      <input class="contact-input" type="email" placeholder="Your Email">
+      <textarea class="contact-message" placeholder="Your Message"></textarea>
+      <button class="contact-send-button">Send</button>
+    </div>
+  </div>
+  <footer style="background-color: lightgreen; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; align-items: center;">
+      <div style="color: black; font-weight: bold;">Company Name</div>
+      <div style="margin-left: 10px; color: black;">
+        <div><strong>Address: 123 Main Street, City</strong></div>
+        <div><strong>Phone: +123 456 7890</strong></div>
+        <div><strong>Email: info@company.com</strong></div>
+      </div>
+    </div>
+    <div style="display: flex; gap: 20px;">
+      <div style="background-color: lightgoldenrodyellow; padding: 10px; border-radius: 5px; display: flex; flex-direction: column; gap: 10px;">
+        <div><a class="footer-link" href="#">Home</a></div>
+        <div><a class="footer-link" href="#">Services</a></div>
+        <div><a class="footer-link" href="#">Training Registration</a></div>
+        <div><a class="footer-link" href="#">Support</a></div>
+        <div><a class="footer-link" href="#">Contact Us</a></div>
+      </div>
+      <div style="background-color: lightgoldenrodyellow; padding: 10px; border-radius: 5px; display: flex; flex-direction: column; gap: 10px;">
+        <div><a class="footer-link" href="#">Home</a></div>
+        <div><a class="footer-link" href="#">Services</a></div>
+        <div><a class="footer-link" href="#">Training Registration</a></div>
+        <div><a class="footer-link" href="#">Support</a></div>
+        <div><a class="footer-link" href="#">Contact Us</a></div>
+      </div>
+      <div style="background-color: lightgoldenrodyellow; padding: 10px; border-radius: 5px; display: flex; flex-direction: column; gap: 10px;">
+        <div><a class="footer-link" href="#">Facebook</a></div>
+        <div><a class="footer-link" href="#">Twitter</a></div>
+        <div><a class="footer-link" href="#">Instagram</a></div>
+        <div><a class="footer-link" href="#">LinkedIn</a></div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  
+  
+  
+  
+</body>
+</html>
